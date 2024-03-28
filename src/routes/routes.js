@@ -5,7 +5,11 @@ const { userLogin, userRegister, createText, getText } = require('../controller/
 const auth = require('../middleware/auth.middleware')
 
 routes.get('/hello', (req, res) => {
-    return res.send('<h1> hello world! </h1>')
+    return res.send('<h1> helloooooooooo world! </h1>')
+})
+
+routes.get('/test', (req, res) => {
+    return res.send('<h1> this is the test api for CI/CD pipeline </h1>')
 })
 routes.post('/login', userLogin)
 routes.post('/register', userRegister)
